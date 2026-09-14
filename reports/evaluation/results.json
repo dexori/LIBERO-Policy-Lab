@@ -1,0 +1,292 @@
+{
+  "task_id": 5,
+  "task_name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+  "language": "pick up the black bowl on the ramekin and place it on the plate",
+  "dataset_path": "/home/z/LIBERO/libero/datasets/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+  "device": "cuda",
+  "evaluation": {
+    "requested_episodes": 10,
+    "max_steps": 220,
+    "wait_steps": 10,
+    "init_state_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "temporal_ensemble_coeff": 0.01,
+    "record_resolution_per_camera": 512
+  },
+  "methods": {
+    "state": {
+      "status": "complete",
+      "checkpoint": "bc_policy.pt",
+      "checkpoint_metric": {
+        "name": "best_val_mse",
+        "value": 0.043294899794617564
+      },
+      "parameter_count": 19463,
+      "episodes": 10,
+      "successes": 10,
+      "success_rate": 1.0,
+      "mean_steps_on_success": 96.6,
+      "elapsed_seconds": 48.14958357810974,
+      "episode_results": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 88
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 97
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 87
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 96
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 103
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 87
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 93
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 107
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 114
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 94
+        }
+      ]
+    },
+    "rnn": {
+      "status": "complete",
+      "checkpoint": "rnn_bc_policy.pt",
+      "checkpoint_metric": {
+        "name": "best_val_mse",
+        "value": 0.03859893085542324
+      },
+      "parameter_count": 636295,
+      "episodes": 10,
+      "successes": 9,
+      "success_rate": 0.9,
+      "mean_steps_on_success": 102.22222222222223,
+      "elapsed_seconds": 54.5280179977417,
+      "episode_results": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 98
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 111
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 102
+        },
+        {
+          "episode": 3,
+          "success": true,
+          "steps": 102
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 103
+        },
+        {
+          "episode": 5,
+          "success": false,
+          "steps": 220
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 100
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 102
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 103
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 99
+        }
+      ]
+    },
+    "transformer": {
+      "status": "complete",
+      "checkpoint": "rnn_TF_policy.pt",
+      "checkpoint_metric": {
+        "name": "best_val_mse",
+        "value": 0.041149799635491355
+      },
+      "parameter_count": 441351,
+      "episodes": 10,
+      "successes": 0,
+      "success_rate": 0.0,
+      "mean_steps_on_success": null,
+      "elapsed_seconds": 84.58030486106873,
+      "episode_results": [
+        {
+          "episode": 0,
+          "success": false,
+          "steps": 220
+        },
+        {
+          "episode": 1,
+          "success": false,
+          "steps": 220
+        },
+        {
+          "episode": 2,
+          "success": false,
+          "steps": 220
+        },
+        {
+          "episode": 3,
+          "success": false,
+          "steps": 220
+        },
+        {
+          "episode": 4,
+          "success": false,
+          "steps": 220
+        },
+        {
+          "episode": 5,
+          "success": false,
+          "steps": 220
+        },
+        {
+          "episode": 6,
+          "success": false,
+          "steps": 220
+        },
+        {
+          "episode": 7,
+          "success": false,
+          "steps": 220
+        },
+        {
+          "episode": 8,
+          "success": false,
+          "steps": 220
+        },
+        {
+          "episode": 9,
+          "success": false,
+          "steps": 220
+        }
+      ]
+    },
+    "act": {
+      "status": "complete",
+      "checkpoint": "act_policy.pt",
+      "checkpoint_metric": {
+        "name": "best_prior_l1",
+        "value": 0.4371863551734798
+      },
+      "parameter_count": 4054983,
+      "episodes": 10,
+      "successes": 9,
+      "success_rate": 0.9,
+      "mean_steps_on_success": 92.66666666666667,
+      "elapsed_seconds": 51.834399700164795,
+      "episode_results": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 90
+        },
+        {
+          "episode": 1,
+          "success": true,
+          "steps": 94
+        },
+        {
+          "episode": 2,
+          "success": true,
+          "steps": 93
+        },
+        {
+          "episode": 3,
+          "success": false,
+          "steps": 220
+        },
+        {
+          "episode": 4,
+          "success": true,
+          "steps": 92
+        },
+        {
+          "episode": 5,
+          "success": true,
+          "steps": 95
+        },
+        {
+          "episode": 6,
+          "success": true,
+          "steps": 92
+        },
+        {
+          "episode": 7,
+          "success": true,
+          "steps": 95
+        },
+        {
+          "episode": 8,
+          "success": true,
+          "steps": 94
+        },
+        {
+          "episode": 9,
+          "success": true,
+          "steps": 89
+        }
+      ]
+    }
+  }
+}
