@@ -27,11 +27,11 @@ def parse_args():
         default=None,
         help="Use the first N sorted task files; by default use every task.",
     )
-    parser.add_argument("--batch-size", type=int, default=8)
+    parser.add_argument("--batch-size", type=int, default=128)
     parser.add_argument("--epochs", type=int, default=100)
     parser.add_argument("--lr", type=float, default=1e-4)
     parser.add_argument("--chunk-size", type=int, default=10)
-    parser.add_argument("--kl-weight", type=float, default=1.0)
+    parser.add_argument("--kl-weight", type=float, default=0.05)
     parser.add_argument("--val-fraction", type=float, default=0.2)
     parser.add_argument("--num-workers", type=int, default=5)
     parser.add_argument("--seed", type=int, default=0)

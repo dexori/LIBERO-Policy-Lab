@@ -36,7 +36,9 @@ if not os.path.isfile(CHECKPOINT_PATH):
 
 checkpoint = torch.load(
     CHECKPOINT_PATH,
-    map_location=device,
+    # Keep normalization statistics on CPU for NumPy preprocessing. Loading
+    # the state dict below will still copy model parameters to ``device``.
+    map_location="cpu",
 )
 
 model_config = checkpoint["model_config"]
