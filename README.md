@@ -82,8 +82,8 @@ The project follows the upstream LIBERO environment and currently targets
 Python 3.8 with MuJoCo-compatible rendering.
 
 ```bash
-git clone https://github.com/dexori/LIBERO.git
-cd LIBERO
+git clone https://github.com/dexori/LIBERO-Policy-Lab.git
+cd LIBERO-Policy-Lab
 
 conda create -n libero-policy-lab python=3.8.13 -y
 conda activate libero-policy-lab
