@@ -56,7 +56,7 @@ rollout、录像与结果导出组织在一起，用统一协议比较以下方�
 当前环境沿用上游 LIBERO 配置，推荐 Python 3.8：
 
 ```bash
-git clone https://github.com/Steelwoolballs/LIBERO.git
+git clone https://github.com/dexori/LIBERO.git
 cd LIBERO
 
 conda create -n libero-policy-lab python=3.8.13 -y
